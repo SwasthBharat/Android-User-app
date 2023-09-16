@@ -21,7 +21,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pytz
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          T1: ${{ secrets.T1 }}
+          T2: ${{ secrets.T2 }}
 
       - name: Fetch commit info and update README
         run: |
